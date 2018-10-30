@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Check extends Component {
+export default class Videos extends Component {
   render() {
     return (
       <div>
-        checking this componenet
+        inside videos
       </div>
     )
   }

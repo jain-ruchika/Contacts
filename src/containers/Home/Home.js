@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import Layout from '../../components/Layout/Layout';
-import {Contacts} from '../Contacts/Contacts';
+import Contacts from '../Contacts/Contacts';
 
 export default class Home extends PureComponent {
   render() {

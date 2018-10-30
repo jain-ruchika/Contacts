@@ -4,7 +4,7 @@ import Contact from "../../components/Contact/Contact";
 import ContactDetail from "../../components/ContactDetails/ContactDetails";
 import contactsList from "../../assets/contacts.json";
 
-export class Contacts extends Component {
+export default class Contacts extends Component {
   constructor(props) {
     super(props);
     this.state = {
