@@ -1,6 +1,6 @@
-import {combineReducer} from 'redux';
-import contactReducer from './contactReducer';
+import {combineReducers} from 'redux';
+import videosReducer from './videosReducer';
 
-export default combineReducer({
-    contacts : contactReducer
+export default combineReducers({
+    videos : videosReducer
 })
