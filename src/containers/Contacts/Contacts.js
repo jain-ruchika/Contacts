@@ -1,4 +1,4 @@
-import React, { PureComponent, Component } from "react";
+import React, { Component } from "react";
 import Aux from "../../hoc/Auxi";
 import Contact from "../../components/Contact/Contact";
 import ContactDetail from "../../components/ContactDetails/ContactDetails";
@@ -12,19 +12,13 @@ export default class Contacts extends Component {
       contactData: null
     };
   }
-  componentWillMount() {
-    console.log("contactlist", contactsList);
-  }
-  componentDidMount() {}
+   componentDidMount() {}
   showContactDetail = contactIndex => {
-    // const persons = this.state.persons.slice();
-    console.log("insied delete", contactIndex);
     const contacts = [...this.state.contactsList];
     const contactData = contacts.filter(
       (contact, index) => index === contactIndex
     );
     this.setState({ contactData: contactData });
-    console.log("contact is=", this.state.contactData);
   };
 
   render() {
@@ -53,7 +47,6 @@ export default class Contacts extends Component {
           {this.state.contactData.map((contact, index) => {
             return (
               <ContactDetail
-                name={contact.general.firstName}
                 name={contact.general.firstName}
                 title={contact.job.title}
                 key={contact.general.firstName}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import YTSearch from "youtube-api-search";
 import Video from '../../components/Video/Video';
 import Aux from '../../hoc/Auxi';
 import { connect } from 'react-redux';
@@ -16,15 +15,6 @@ import {fetchVideos} from "../../actions/videoActions";
   API_KEY = "AIzaSyAxA0l-th2-kKHQhso7ohzX3HkuMwh-fNs";
   componentDidMount() {
     this.props.fetchVideos();
-    // YTSearch({ key: this.API_KEY, term: "sachin" }, video => {
-    //   this.setState({ videos: video });
-    //   // tslint:disable-next-line:no-console
-    //   console.log("====================================");
-    //   // tslint:disable-next-line:no-console
-    //   console.log(video);
-    //   // tslint:disable-next-line:no-console
-    //   console.log("====================================");
-    // });
   }
 
   render() {
